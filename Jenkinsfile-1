@@ -6,6 +6,8 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
+                sh 'env'
+                sh 'echo $USER'
                 sh 'node --version'
             }
         }
