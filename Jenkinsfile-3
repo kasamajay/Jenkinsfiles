@@ -1,1 +1,15 @@
+pipeline {
+    agent {
+      docker { dockerfile true }
+    }
 
+    stages {
+        stage('dockerfile-agent') {
+            steps {
+                sh 'node --version'
+                sh 'curl --version'
+                sh 'wget --version'
+            }
+        }
+    }
+}
