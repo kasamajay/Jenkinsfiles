@@ -1,4 +1,4 @@
-pipeline {
+```pipeline {
     agent { dockerfile true }
 
     stages {
@@ -13,3 +13,4 @@ pipeline {
         }
     }
 }
+```
